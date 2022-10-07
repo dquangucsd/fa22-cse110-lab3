@@ -1,1 +1,25 @@
 Fill in the passphrases here.
+
+1. <!-- Passcode for question 1: greenEggsAndHam -->
+
+2. data-question2="iHateCplusplus"
+3. Passcode for question 3: HTMLRocks
+4. <question-four style="display:none">Passcode: JavaScriptRules</question-four>
+5. Question 5 Passcode:
+      SvelteBeatsReact
+6. // Question 6 Passcode: ThisIsJS
+7. Question 7 Passcode: YouFoundMe
+8. Question 8 passcode: coolcoolcool
+9. Question 9 passcode: 2020sucked
+10. Question 10 passcode: listenToTheBlackKeys
+11.name="question11" content="a11yComesFirst"
+12. data-question12passcode="iLoveWebDev"
+
+
+
+
+
+Hello, CSE 110
+Passcode: JavaScriptRules
+On this page you'll find all of the answers to our scavenger hunt questions, but they may require some tools to find them...
+
