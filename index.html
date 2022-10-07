@@ -7,32 +7,143 @@
     <link rel="icon" type="image/png" href="./screenshots/dq.png">
   </head>
 
+  <nav class="crumbs">
+    <ul>
+        <li class="crumb"><a href="#">Meetings</a></li>
+        <li class="crumb"><a href="#">October</a></li>
+        <li class="crumb">6</li>
+    </ul>
+  </nav>
+
 
   <header>
-    <h1><b>Welcome to my HTML page.</b></h1>
-    <p>Below is more tags.</p>
+    <h1><strong>Food App UI Planning</strong></h1>
+    <p>We discuss how far the team is on how they want to implement the food app.</p>
   </header>
+
+  <hr>
 
   <main>
     <body>    
         <section>
-            <h2>Sometimes I wonder:</h2>
-            <p>what would my future self want me to do now? Am I on the right path? Should I try doing other things?</p>
-            <p>What strengths do I possess that I am not yet aware of? Can or when will I find out?</p>
+            <h2><span>Navi Bar:</span></h2>
+            <p>Alejandro is considering putting the navi bar at the top or bottom. Can we fit other things?<br>
+                Bar at the left or right is <b>ruled out</b>, we can implement an option to move it later.
+            </p>
+            <details>
+                <summary>Why no left or right?</summary>
+                    <p>Phone screens are tall not wide, it would make the ratio even worse. <br>
+                    We would also then need the user to choose a side to put the navi bar based on whether they're left or right handed.
+                    <img src="./screenshots/left_handed.png" alt = "Left Handed Example" width="550" height = "550">
+                    </p>
+            </details>
+
+            <hr>
+
+            <p>Tom and David are creating a prototype version with an adaptive bar based on what page the user is on.</p>
+            <ol>
+                <li>Consider what are essentials for each page. <em>Don't forget back button</em></li>
+                <li>Decide which features to go on, minimize <i>or remove</i> unnecessary ones</li>
+                <li>Communicate with settings team to allow user to manually add more features <br>
+                    If you need to communicate: <a href="mailto:dquang@ucsd.edu">dquang@ucsd.edu</a>
+                </li>
+            </ol>
         </section>
 
-        <section>
-            <h2>But it's alright.</h3>
-            <p>I guess I should stop overthinking things and take the plunge. With managed risk of course.</p>
-        </section>
+        <hr>
 
         <section>
-            <h3>Small h3 tag here too.</h3>
+            <h2><span>Order Page:</span></h3>
+            <p>Clarence and Winnie are designing two versions, a list and scrolling cards.</p>
+            <div>
+                <ul>
+                    <li><h3>List Pros</h3></li>
+                        <ul>
+                            <li>Simple</li>
+                            <li>Can use green dot for ready, yellow for in progress, red for not received</li>
+                        </ul>
+                    <li><h3>List Cons</h3></li>
+                        <ul>
+                            <li>Can overload user with text if not managed well</li>
+                            <li>Not as many animations so not as cool</li>
+                        </ul>
+                    <li><h3>Scrolling Pros</h3></li>
+                        <ul>
+                            <li>Looks cool</li>
+                            <li>Bigger text, doesn't overload user with text, more animations</li>
+                        </ul>
+                    <li><h3>Scrolling Cons</h3></li>
+                        <ul>
+                            <li>Harder if many separate orders</li>
+                            <li>Can be more cumbersome</li>
+                        </ul>
+                </ul>
+            </div>
         </section>
     </body>
-
   </main>
+  
+  <hr>
 
+  <details>
+    <summary>Meeting audio, video</summary>
+        <audio controls>
+            <source src="./meeting_recording/audio1063976993.m4a" type = "audio/mp4">
+            Your browser doesn't support the m4a audio element.
+        </audio>
+
+        <video width="550" height = "350" controls>
+            <source src="./meeting_recording/video1063976993.mp4" type="video/mp4">
+            Your browser doesn't support the mp4 video element.
+        </video>
+</details>
+
+<hr>
+
+<h4>Enter name for participation:</h4>
+<form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="read">Did you review:</label><br>
+    <input type="checkbox" id="read" name="read">
+
+    <h4>Do you understand:</h4>
+
+    <input type="radio" id="yes" name="part">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="part">
+    <label for="no">No</label><br>
+
+    <h4>What day is it?</h4>
+    <label for="start">Start date:</label>
+    <input type="date" id="start" name="read date"><br>
+
+    <label for="videoreview">How was the video recording?</label>
+    <textarea id="videoreview" name="videoreview" rows="4" cols="50"></textarea><br>
+
+    <label for="milk-tea-choice">What boba do you prefer for next meeting?</label>
+    <input list="boba flavors" id="milk-tea-choice" name="milk-tea-choice">
+    <datalist id="boba flavors">
+        <option value="Black tea">
+        <option value="Oolong tea">
+        <option value="Oreo">
+        <option value="Earl Grey">
+    </datalist><br>
+
+    <label for="vote-day">Vote for the day for the next meeting</label>
+    <select name="day" id="vote-day">
+        <option value="Monday">Monday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Friday">Friday</option>
+    </select><br>
+
+    <button class="done" type="button">Done</button>
+
+
+
+</form>
+
+<hr>
 
   <footer>
     <p> 2022 Quang</p>
