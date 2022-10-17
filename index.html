@@ -21,18 +21,25 @@
         
         
         <header>
-            <h1><strong>Food App UI Planning</strong></h1>
+            <div class="title-container">
+                <div><h1><strong>Food App </strong></h1></div>
+                <div><h1><strong>UI Planning</strong></h1></div>
+            </div>
             <p>We discuss how far the team is on how they want to implement the food app.</p>
         </header>
+
+        <div>
+            <h5>Food App UI Planning</h5>
+        </div>
         
         <hr>
         <section>
             <h2><span>Navi Bar:</span></h2>
-            <p>Alejandro is considering putting the navi bar at the top or bottom. Can we fit other things?<br>
+            <p font="arial">Alejandro is considering putting the navi bar at the top or bottom. Can we fit other things?<br>
                 Bar at the left or right is <b>ruled out</b>, we can implement an option to move it later.
             </p>
             <details>
-                <summary>Why no left or right?</summary>
+                <summary id="blue-p">Why no left or right?</summary>
                     <p>Phone screens are tall not wide, it would make the ratio even worse. <br>
                     We would also then need the user to choose a side to put the navi bar based on whether they're left or right handed.
                     <img src="./screenshots/left_handed.png" alt = "Left Handed Example" width="550" height = "550">
@@ -43,7 +50,7 @@
 
             <p>Tom and David are creating a prototype version with an adaptive bar based on what page the user is on.</p>
             <ol>
-                <li>Consider what are essentials for each page. <em>Don't forget back button</em></li>
+                <li>Consider what are essentials for each page. <em id="red">Don't forget back button</em></li>
                 <li>Decide which features to go on, minimize <i>or remove</i> unnecessary ones</li>
                 <li>Communicate with settings team to allow user to manually add more features <br>
                     If you need to communicate: <a href="mailto:dquang@ucsd.edu">dquang@ucsd.edu</a>
@@ -102,7 +109,7 @@
 
     <hr>
 
-    <h4>Enter name for participation:</h4>
+    <h4 font=arial>Enter name for participation:</h4>
     <form>
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br>
@@ -111,7 +118,7 @@
 
 
         <form>
-            <fieldset>
+            <fieldset class="order-items">
                 <legend>
                     <h4>Do you understand:</h4>
                 </legend>
@@ -132,13 +139,25 @@
         <label for="videoreview">How was the video recording?</label>
         <textarea id="videoreview" name="videoreview" rows="4" cols="50"></textarea><br>
 
-        <label for="milk-tea-choice">What boba do you prefer for next meeting?</label>
+        <label for="milk-tea-choice">What boba do you prefer for next meeting? Options:</label>
+        <div class="grid-container">
+            <div class="grid-item">Black Tea</div>
+            <div class="grid-item">Oolong Tea</div>
+            <div class="grid-item">Oreo</div>
+            <div class="grid-item">Earl Grey</div>
+            <div class="grid-item">Jasmine Tea</div>
+            <div class="grid-item">Taro Bubble Tea</div>
+
+        </div>
         <input list="boba-flavors" id="milk-tea-choice" name="milk-tea-choice">
         <datalist id="boba-flavors">
             <option value="Black tea">
             <option value="Oolong tea">
             <option value="Oreo">
             <option value="Earl Grey">
+            <option value="Jasmine Tea">
+            <option value="Taro Bubble Tea">
+            </option>
         </datalist><br>
 
         <label for="vote-day">Vote for the day for the next meeting</label>
