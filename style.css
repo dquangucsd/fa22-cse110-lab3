@@ -1,8 +1,150 @@
+/* This changes the color of the page
+*/
 body {
-    background-color: lightblue;
+    background-color: hsl(180, 88%, 95%);
 }
 
-h1 {
-    color: navy;
-    margin-left: 20px;
+/* This changes color for h1 tag. e.g. Food App UI Planning
+*/
+.title-container {
+        color: rgb(129, 82, 2);
+        /*text-align: center;*/
+        justify-content: center;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: 5px;
+        font-size: 2rem;
+
+        border-style: solid;
+        border-width: 1cm;
+        border-radius: 1cm;
+        border-color: burlywood;
+        margin: 1cm;
+        padding: 1cm;
+
+        height: auto;
+        width: auto;
+
+        display: flex;
+        flex: 1 1;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    
+    
 }
+
+.order-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    @media (max-width: 1cm), (orientation: portrait) {
+        justify-items: center;
+    }
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    gap: 10px 10px;
+    font-size: 15px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+
+
+* {
+    font-family: "monospace";
+}
+
+#blue-p {
+    color: blue;
+}
+
+#blue-p {
+    color: rgb(5, 5, 118);
+}
+
+#red {
+    color: red;
+}
+
+div:hover:not(.a) {
+    background-color: purple;
+}
+
+h1[font=arial], h2[font=arial], h3[font=arial], h4[font=arial], h6[font=arial], p[font=arial] {
+    font-family: "arial";
+}
+
+div + h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Sections e.g. Navi Bar, Order Page*/
+body > h2 {
+    color: black;
+    margin-left: 1px;
+    margin-bottom: 29px;
+    position: relative;
+    top: 5px; left: 15px;
+}
+
+/*List pros, cons, etc.*/
+section h3 {
+    color: gray;
+    font-size: 1.2rem;
+    margin-left: 3Q;
+    border: 2px dotted burlywood;
+    display: block;
+}
+
+h4 {
+    color: #a45;
+    font-size: 2rem;
+    padding: 1px;
+    display: inline-block;
+
+}
+
+div ~ h5 {
+    color: rgb(18, 102, 92);
+    text-align: left;
+    text-decoration: underline;
+    font-size: 1rem;
+
+    border-width: 1cm;
+    border-radius: 1cm;
+
+    position: absolute;
+    top: 10.6cm;
+    left: 1cm;
+
+}
+
+
+form {
+
+    min-width: 320px;
+    max-width: 500px;
+}
+
+:hover {
+    color:rgb(29, 87, 9);
+}
+
+:active {
+    color:yellowgreen;
+}
+
+
